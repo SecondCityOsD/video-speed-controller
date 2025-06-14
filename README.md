@@ -1,8 +1,8 @@
-# Video Speed Controller (XUL Fork for Pale Moon)
+# Video Speed Controller (XUL Fork for Pale Moon and Basilisk)
 
 This is a **fork** of the original [Video Speed Controller extension](https://github.com/igrigorik/videospeed), adapted for use with **UXP-based browsers** like **Pale Moon** and **Basilisk**.
 
-If you're looking for the original Chrome WebExtension version, you can find it [here] (https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
+If you're looking for the original Chrome WebExtension version, you can find it [here](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
 
 
 # The science of accelerated playback
@@ -36,7 +36,7 @@ last point to listen to it a few more times.
 
 ![Player](https://cloud.githubusercontent.com/assets/2400185/24076745/5723e6ae-0c41-11e7-820c-1d8e814a2888.png)
 
-### _[Install Chrome Extension](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)_
+### _[Install The Original Chrome Extension](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)_
 
 \*\* Once the extension is installed simply navigate to any page that offers
 HTML5 video ([example](http://www.youtube.com/watch?v=E9FxNzv1Tr8)), and you'll
@@ -67,17 +67,6 @@ key. This is not a perfect solution since some sites may listen to both, but it 
 most of the time.
 
 ### FAQ
-
-**The video controls are not showing up?** This extension is only compatible
-with HTML5 video. If you don't see the controls showing up, chances are you are
-viewing a Flash video. If you want to confirm, try right-clicking on the video
-and inspect the menu: if it mentions flash, then that's the issue. That said,
-most sites will fallback to HTML5 if they detect that Flash it not available.
-You can try manually disabling Flash plugin in Chrome:
-
-- In a new tab, navigate to `chrome://settings/content/flash`
-- Disable "Allow sites to run Flash"
-- Restart your browser and try playing your video again
 
 **The speed controls are not showing up for local videos?** To enable playback
 of local media (e.g. File > Open File), you need to grant additional permissions

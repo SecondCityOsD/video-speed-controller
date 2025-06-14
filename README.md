@@ -1,3 +1,10 @@
+# Video Speed Controller (XUL Fork for Pale Moon)
+
+This is a **fork** of the original [Video Speed Controller extension](https://github.com/igrigorik/videospeed), adapted for use with **UXP-based browsers** like **Pale Moon** and **Basilisk**.
+
+If you're looking for the original Chrome WebExtension version, you can find it [here] (https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk)
+
+
 # The science of accelerated playback
 
 **TL;DR: faster playback translates to better engagement and retention.**

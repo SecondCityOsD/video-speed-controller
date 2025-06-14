@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://videospeed-palemoon/skin/popup.css" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://videospeed-palemoon/locale/popup.dtd">
+
+<!-- 
+  This is the XUL equivalent of popup.html.
+  It defines the UI for the panel that appears when the user clicks our toolbar button.
+-->
+<page id="videospeed-popup"
+      title="&videospeed.popup.title;"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- 
+    The script for this popup's logic will be handled in our main browserOverlay.js.
+    We will add event listeners to these buttons from that central script when the popup is shown.
+  -->
+
+  <!-- A <vbox> is a vertical container that stacks elements on top of each other. -->
+  <vbox>
+    <!-- 
+      XUL buttons are very similar to HTML buttons.
+      'hidden="true"' is the XUL equivalent of the "hide" class for initial state.
+    -->
+    <button id="videospeed-popup-enable" label="&videospeed.popup.enable;" hidden="true"/>
+    <button id="videospeed-popup-disable" label="&videospeed.popup.disable;"/>
+    
+    <label id="videospeed-popup-status" hidden="true"/>
+    
+    <!-- <separator class="hr"/> is the XUL equivalent of <hr/> -->
+    <separator class="hr"/>
+    
+    <button id="videospeed-popup-config" label="&videospeed.popup.settings;"/>
+    
+    <separator class="hr"/>
+
+    <!-- 
+      We can give these buttons a different appearance using a CSS class,
+      just like in HTML.
+    -->
+    <button id="videospeed-popup-feedback" label="&videospeed.popup.feedback;" class="secondary"/>
+    <button id="videospeed-popup-about" label="&videospeed.popup.about;" class="secondary"/>
+  </vbox>
+
+</page>
+

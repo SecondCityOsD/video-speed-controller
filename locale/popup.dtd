@@ -1,0 +1,12 @@
+<!-- 
+  This file defines the text strings used in popup.xul.
+  It should be placed in the "chrome/locale/en-US/" directory.
+-->
+
+<!ENTITY videospeed.popup.title      "Video Speed Controller">
+<!ENTITY videospeed.popup.enable     "Enable">
+<!ENTITY videospeed.popup.disable    "Disable">
+<!ENTITY videospeed.popup.settings   "Settings">
+<!ENTITY videospeed.popup.feedback   "Send Feedback">
+<!ENTITY videospeed.popup.about      "About">
+

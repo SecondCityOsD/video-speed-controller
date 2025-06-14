@@ -1,0 +1,45 @@
+/*
+  This CSS styles our XUL popup panel.
+  It should be placed in the "chrome/skin/" directory.
+*/
+
+/* We target the <page> element by its ID instead of the <body> tag. */
+#videospeed-popup {
+  min-width: 8em;
+  padding: 6px; /* A little padding makes it look nicer. */
+}
+
+/* We target our <separator> elements by their class. */
+separator.hr {
+  -moz-appearance: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0.8em 0;
+  height: 0px;
+}
+
+/* Styling for all buttons within the popup */
+button {
+  /*
+    In XUL, it's often best to let buttons use the native theme of the OS.
+    However, to match the original extension, we can force a custom style.
+    The "-moz-appearance: none;" rule removes the native OS styling.
+  */
+  -moz-appearance: none;
+  width: 100%;
+  background-image: linear-gradient(#ededed, #ededed 38%, #dedede);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.75);
+  color: #444;
+  text-shadow: 0 1px 0 rgb(240, 240, 240);
+  -moz-user-select: none;
+}
+
+/* Styling for the smaller, secondary buttons */
+button.secondary {
+  font-size: 0.95em;
+  margin: 0.15em 0;
+}
+
